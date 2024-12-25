@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor AI</title>
+    <link rel="stylesheet" href="../static/results.css">
+</head>
+<body>
+    <h1>AI Brain Tumor Detector</h1>
+    <p>Here is what the AI thinks...</p>
+    
+    <div class="results-container">
+        <div class="mini-container">
+            <img class="image" src="data:image/jpeg;base64,{{ image }}"/>
+            
+            <div style="display: flex; flex-direction: column; text-align: left; margin-left: 20px; height:fit-content">
+                <h2 class="result">Detected Tumor: {{ content }}</h2>
+                <p class="explanation">{{ explanation }}</p>
+            </div>
+        </div>
+        
+        <button class="back-button" onclick="window.history.back()">Go Back</button>
+    </div>
+</body>
+</html>
