@@ -4,7 +4,7 @@ This AI model can identify if a tumor exists in a brain and then identifies it i
 
 ## Usage 
 - Download this repo's files
-- Install are requirement (can be found in requirement.txt) 
+- Install all of the requirements (can be found in requirement.txt) 
 - Run the brainTumorClassifier.py file 
 
 ## Credits
