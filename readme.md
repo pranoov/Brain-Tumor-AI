@@ -5,7 +5,9 @@ This AI model can identify if a tumor exists in a brain and then identify it int
 ## Usage 
 - Download this repo's files
 - Install all of the requirements (can be found in requirement.txt) 
-- Run the brainTumorClassifier.py file 
+- Run the brainTumorClassifier.py file
+- Upload a MRI scan of brain image (accepted types: JPEG, JPG, PNG, BMP)
+- Click submit to see the results
 
 ## Credits
 Dataset: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
