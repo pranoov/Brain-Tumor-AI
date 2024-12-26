@@ -73,4 +73,4 @@ def result():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)  # Use debug mode for better error tracking
+    app.run()  # Use debug mode for better error tracking
