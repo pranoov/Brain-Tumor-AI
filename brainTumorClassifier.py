@@ -62,9 +62,9 @@ def result():
     
     nextSteps = {
         "Glioma": "The next steps for a glioma tumor depends on the tumor grade, if aggresive like glioblastoma average survival time ranges around 12-18 months. Treatments include surgery, radiation therapy and chemotherapy. Check in with a doctor for accurate information. ",
-        "Meningioma": "",
-        "No Tumor": "",
-        "Pituitary": "",
+        "Meningioma": "The next steps for a meningioma tumor depends on many factors, with 5 year survival rates being 95.7 percent for grade I, 81.8 percent for grade II, and 46.7 percent for grade III. Check in with a doctor for accurate information.",
+        "No Tumor": "There are no expected complications or health concerns. ",
+        "Pituitary": "The next steps for a pituitary tumor depends on many factors, with 5 year survival rates being 97 percent, and 81 percent for cancerous pituitary tumors. Most pituitary tumors are curable through treatment like surgery, but check in with a doctor for accurate information.",
     }
 
     nextStep = nextSteps.get(results, "No next steps available.")
