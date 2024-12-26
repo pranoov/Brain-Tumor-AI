@@ -14,9 +14,11 @@
         <div class="mini-container">
             <img class="image" src="data:image/jpeg;base64,{{ image }}"/>
             
-            <div style="display: flex; flex-direction: column; text-align: left; margin-left: 20px; height:fit-content">
+            <div style="display: flex; flex-direction: column; text-align: left; margin-left: 20px; height:fit-content; width: 60%;">
                 <h2 class="result">Detected Tumor: {{ content }}</h2>
                 <p class="explanation">{{ explanation }}</p>
+                <h2 class="result">Next Steps</h2>
+                <p class="explanation">{{ nextSteps }}</p>
             </div>
         </div>
         

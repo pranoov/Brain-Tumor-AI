@@ -57,10 +57,20 @@ def result():
         "No Tumor": "Congrats, no tumor was detected! Your brain is healthy and normal. ",
         "Pituitary": "Pituatary tumors are often mostly not concerous with only a small percent being cancerous. They are caused by abnormal growth of the pituitary gland in the brain and cover roughly 17 percent of brain tumors."
     }
+
     explanation = explanations.get(results, "No explanation available.")
     
-    return render_template("results.html", content=results, explanation=explanation, image=imageData)
+    nextSteps = {
+        "Glioma": "The next steps for a glioma tumor depends on the tumor grade, if aggresive like glioblastoma average survival time ranges around 12-18 months. Treatments include surgery, radiation therapy and chemotherapy. Check in with a doctor for accurate information. ",
+        "Meningioma": "",
+        "No Tumor": "",
+        "Pituitary": "",
+    }
+
+    nextStep = nextSteps.get(results, "No next steps available.")
+
+    return render_template("results.html", content=results, explanation=explanation, image=imageData, nextSteps = nextStep)
 
 
 if __name__ == "__main__":
-    app.run()  # Use debug mode for better error tracking
+    app.run(debug=True)  # Use debug mode for better error tracking
