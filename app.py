@@ -7,7 +7,7 @@ import base64
 
 app = Flask(__name__)
 
-# Load the model once
+# Load the model first
 new_model = load_model('models/brainTumorImageClassifier.h5')
 
 
